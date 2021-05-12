@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    @import url("css/履歷css.css");
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title>123</title>
+</head>
+
+<body>
+  <header>
+    <div class="pho">
+      <img src="image/photo.jpg">
+    </div>
+
+    <div class="head_text">彭祐漢</div>
+    <div class="head_text2">
+      <pre>
+         我是Hank<br> 
+         就讀中原大學資管二乙 OuOb<br>
+         爛字纏身
+        </pre>
+    </div>
+
+    <img src="image/123.png" class="head_color">
+
+    <a href="https://www.instagram.com/hank__peng/">
+      <img src="image/ig.png" class="ig">
+    </a>
+
+    <a href="https://www.facebook.com/hank.peng.98">
+      <img src="image/facebook.png" class="fb" alt="facebook">
+    </a>
+
+    <a href="mailto:s10840133@cycu.edu.tw">
+      <img src="image/mail.png" class="mail">
+    </a>
+  </header>
+
+  <div class="backco">
+    <div class="sk">
+      <div class="skill">
+        <div class="sk-name">CSS</div>
+        <div class="sk-bar">
+          <div class="sk-per" per="77"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="sk-name">Javascript</div>
+        <div class="sk-bar">
+          <div class="sk-per" per="69"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="sk-name">HTML</div>
+        <div class="sk-bar">
+          <div class="sk-per" per="87"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="sk-name">Adobe premiere</div>
+        <div class="sk-bar">
+          <div class="sk-per" per="83"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="sk-name">Sony vegas</div>
+        <div class="sk-bar">
+          <div class="sk-per" per="88"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="sk-name">Adobe Photoshop</div>
+        <div class="sk-bar">
+          <div class="sk-per" per="76"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $('.sk-per').each(function () {
+        var $this = $(this);
+        var per = $this.attr('per');
+        $this.css("width", per + '%');
+        $({
+          animatedValue: 0
+        }).animate({
+          animatedValue: per
+        }, {
+          duration: 1000,
+          step: function () {
+            $this.attr('per', Math.floor(this.animatedValue) + '%');
+          },
+          complete: function () {
+            $this.attr('per', Math.floor(this.animatedValue) + '%');
+          }
+        });
+      });
+    </script>
+  </div>
+
+
+  <div class="brtt">
+    <div class="wrapp">
+      <section class="block">
+        <div class="each-year">
+          <div class="tt">學習歷程</div>
+          <div class="each-event">
+            <div class="event-description">大一(上)<br>經過管理學課程去動物保護教育園區做服務學習，想藉由這個機會，讓更多人知道收容所的現況，並提倡以領養代替購買的觀念。
+            </div>
+          </div>
+          <div class="each-event">
+            <div class="event-description">大一(下)<br>透過企概課程，學到了時間分配非常重要，還有團隊溝通的必要性，遇到困難要趕快講，不要拖到最後。
+            </div>
+          </div>
+          <div class="each-event">
+            <div class="event-description">大二(上)<br>我覺得網程課程可能第一次接觸對我來說有點太難，但經過一段長時間的練習，最後還是勉強寫出能看的網站。
+            </div>
+          </div>
+          <div class="each-event">
+            <div class="event-description">現在<br>這學期的多媒體課程，我覺得比上學期網程還要有趣且變化多樣化了，可以自己設計出自己想要的網站!
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+  <img src="image/p3.jpg" class="c1">
+  <img src="image/p2.jpg" class="c2">
+  <img src="image/p1.jpg" class="c3">
+  <img src="image/p4.jpg" class="c4">
+
+  <h1>沒什麼用的東西</h1>
+  <br>
+  <div class="process-wrapper">
+    <div id="progress-bar-container">
+      <ul>
+        <li class="step step01 active">
+          <div class="step-inner">實況主挑戰賽</div>
+        </li>
+        <li class="step step02">
+          <div class="step-inner">社團</div>
+        </li>
+        <li class="step step03">
+          <div class="step-inner">社團</div>
+        </li>
+        <li class="step step04">
+          <div class="step-inner">社團</div>
+        </li>
+        <li class="step step05">
+          <div class="step-inner">#1</div>
+        </li>
+      </ul>
+
+      <div id="line">
+        <div id="line-progress"></div>
+      </div>
+    </div>
+
+    <div id="progress-content-section">
+      <div class="section-content discovery active">
+        <h2>實況主挑戰賽</h2>
+        <p>不錯的一次經驗，能跟實況主一起pk。</p>
+        <img src="image/p5.jpg">
+
+
+      </div>
+
+      <div class="section-content strategy">
+        <h2>賽事企劃</h2>
+        <p>學到了1.增進系與系同儕間的默契及合作態度，揮散青春熱情。2.溝通技巧與交際能力。3.改善各位對電競項目的刻板觀念。4.讓同學可以更了解有更多的紓壓方式與管道。
+          5.在國內這項活動可以更受到重視與推廣。6.如何增進自我能力發揮出與眾不同的才能。7.創造被利用的價值及無可取代性本次講座將邀請劉韋辰講師8.認識舉凡比賽現場整體設計/賽事秩序維持/賽規安排/賽程規畫等。
+        </p>
+        <img src="image/p6.jpg">
+      </div>
+
+      <div class="section-content creative">
+        <h2>實況主經驗分享</h2>
+        <p>創造被利用的價值及無可取代性本次講座將邀請實況主- 吃貨夜雨。
+          教導社內社外對開實況有興趣之同學，並分享自身經歷，讓同學了解到相關行業。在課程中間有許多開放問答時間，讓參與人員能更快去拉近與講師的距離，並且有不懂的地方能快速解惑。在這次課程結束之後，讓參與人員更加了解到「實況主」這個行業，不只是行業而是產業。而講師也分享了在實況主光鮮亮麗的背後不為人知的秘密，讓參與人員能更貼近屬於我們年輕人的偶像，並往夢想更進一步。
+        </p>
+        <img src="image/p7.jpg">
+
+      </div>
+
+      <div class="section-content production">
+        <h2>第一屆中原電競盃</h2>
+        <p>這個活動真的很屌，光是拉讚和跟廠商協列就快爆炸了QQQ。藉由活動提升中原校內課外活動風氣以及中原校外知名度。
+          激起學生對於電競運動的興趣與重視。僅有2-3位選手因設備臨時異常所以給負面評價，大部分的選手對於能使用高規格的電腦設備進行比賽，整體還可以。透過舉辦特戰英豪與英雄聯盟比賽，讓校內高手能齊聚一堂共同切磋、精進。透過與acer、samsung等廠商合作，在宗倬章紀念廳布置了高規格的比賽環境，讓選手能在良好的環境中比賽。
+        </p>
+        <img src="image/p8.jpg">
+      </div>
+
+      <div class="section-content analysis">
+        <h2>#1</h2>
+        <p>1st</p>
+        <img src="image/p9.jpg">
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script>
+    $(".step").click(function () {
+      $(this).addClass("active").prevAll().addClass("active");
+      $(this).nextAll().removeClass("active");
+    });
+
+    $(".step01").click(function () {
+      $("#line-progress").css("width", "3%");
+      $(".discovery").addClass("active").siblings().removeClass("active");
+    });
+
+    $(".step02").click(function () {
+      $("#line-progress").css("width", "25%");
+      $(".strategy").addClass("active").siblings().removeClass("active");
+    });
+
+    $(".step03").click(function () {
+      $("#line-progress").css("width", "50%");
+      $(".creative").addClass("active").siblings().removeClass("active");
+    });
+
+    $(".step04").click(function () {
+      $("#line-progress").css("width", "75%");
+      $(".production").addClass("active").siblings().removeClass("active");
+    });
+
+    $(".step05").click(function () {
+      $("#line-progress").css("width", "100%");
+      $(".analysis").addClass("active").siblings().removeClass("active");
+    });
+  </script>
+
+
+</body>
+
+</html>
