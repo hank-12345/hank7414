@@ -71,9 +71,17 @@
             <p class="hot">HOT 3</p>
             <table>
                 <tr>
-                    <td><a href="c4.html"><img src="pic/logo1.jpg" style="width:50%"></a></td>
-                    <td><a href="c5.html"><img src="pic/p2/ELITE ATLAS AERO_HEADSET.jpg" style="width:50%"></a></td>
-                    <td><a href="c6.html"><img src="pic/p3/STEALTH-700-XB-GEN2_HEADSET.jpg" style="width:50%"></a></td>
+                    <td>
+                        <p class="hot1">Hot 1st<a href="c4.html"><img src="pic/logo1.jpg" style="width:50%"></a></p>
+                    </td>
+                    <td>
+                        <p class="hot1">Hot 2nd<a href="c5.html"><img src="pic/p2/ELITE ATLAS AERO_HEADSET.jpg"
+                                    style="width:50%"></a></p>
+                    </td>
+                    <td>
+                        <p class="hot1">Hot 3rd<a href="c6.html"><img src="pic/p3/STEALTH-700-XB-GEN2_HEADSET.jpg"
+                                    style="width:50%"></a></p>
+                    </td>
                 </tr>
             </table>
 
@@ -222,8 +230,12 @@
             var i;
             var slides = document.getElementsByClassName("mySlides");
             var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
