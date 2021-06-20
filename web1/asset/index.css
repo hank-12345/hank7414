@@ -198,6 +198,14 @@
   text-align: center;
 }
 
+.hot1 {
+  font-size: 30px;
+  font-family: "微軟正黑體";
+  font-weight: bold;
+
+
+}
+
 /*商品一覽*/
 
 .row {
@@ -206,7 +214,7 @@
 
 /* Add padding BETWEEN each column */
 .row,
-.row > .column {
+.row>.column {
   padding: 25px;
 }
 
